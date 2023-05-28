@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/css/signUp.css">
+    <link rel="stylesheet" href="/javaScript/signUp.js">
+
+</head>
+<body>
+    <nav>
+        <div class="cName">
+        <h1 >EasyHire</h1>
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="loginForm.html">Login</a></li>
+          <li><a href="signUp.html">Sign Up</a></li>
+    
+        </ul>
+      </nav>
+    <form action="#">
+    
+            <h1>Sign Up Here</h1>
+
+            <label for="name" id="uName"></label>
+            <input type="text"  id="uName" placeholder="Name..."required>
+
+            <label for="email" id="uEmail"></label>
+            <input type="text" id="uEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email..."required>
+
+            <label for="contact" id="uContact"></label>
+            <input type="text" id="uContact" placeholder="Contact Number..." required>
+          
+
+
+            <input type="password" id="userPassword" name="password" class="password-input" placeholder="password..." minlength="8" 
+            required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+}{&quot;':;?/.,[\]\\|=-]).{8,}$">
+
+
+            <label for="passwordConfirmation" id="uPasswordConfirmation"></label>
+            <input type="password" id="uPasswordConfirmation" placeholder="Confirm Password..." required>
+
+            
+            
+            <div class="clearfix">
+              <label style="margin-top: 15px; margin-left: 5px;">
+                <input type="checkbox" name="agree" value="yes" required>
+                I agree to the terms and conditions
+                </label>
+            <button type="submit">Sign up</button>
+            </div>
+    </form>
+    <div class="signUpContent">
+    <h1> Sign Up for EasyHire</h1>
+    <h4>Connect with great local businesses</h4>
+
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=YOUR_APP_ID&autoLogAppEvents=1" nonce="Z29vZ2xlX2lkPTFfNTg5MzEyNzlfMjU5YzBfMmZkMzUwZDYyYjJhNGVjZDRlY2Q4YjZhMDY5NDRiMWE="></script>
+    
+    
+    <fb:login-button 
+      scope="public_profile,email"
+      onlogin="checkLoginState();">
+    </fb:login-button>
+    </div>
+</body>
+</html>

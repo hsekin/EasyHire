@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/loginForm.css">
+	<title>Web Form </title>
+
+</head>
+<body>
+	<nav>
+        <div class="cName">
+        <h1 >EasyHire</h1>
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="loginForm.html">Login</a></li>
+          <li><a href="signUp.html">Sign Up</a></li>
+    
+        </ul>
+      </nav>
+	<h1> 	
+		Log into EasyHire
+	</h1>
+	<h2>
+		New to EasyHire? <a href="/html/signUp.html" >Sign up</a>
+	</h2>
+	<p>
+		By continuing, you agree to EasyHire <a href="/html/termsAndCondition.html" ">Terms of Service</a> and  acknowledge EasyHire <a href="/html/privacyPolicy.html">Privacy Policy</a>.
+	</p>
+	<form >
+		<label for="uName">User Name:</label>
+		<input type="text" id="uName" name="userName" placeholder="Enter your userName." required>
+
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="uEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required title="Please enter the valid address.">
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+		<a href="/forgot-password" style=" color: black;">Forgot password</a>
+		<div class="clearfix">
+			
+			<button type="submit" onclick="login()">Login</button>
+		</div>
+	</form>
+
+
+	<script >
+		function login(){
+			
+			alert("You have login successful.")
+		}
+	</script>
+</body>
+</html>
